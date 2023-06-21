@@ -1,6 +1,6 @@
 ---
-title: "STAA57_Project_1"
-author: "Lingfeng Su_10058691"
+title: "Bikeshare_Data_Analysis"
+author: "M Enrizky Brillian"
 date: '2023-04-10'
 output: pdf_document
 ---

@@ -1,0 +1,11 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/1026568/7715ced4685349a6b4dfa866d9dcc24a
+bundleId: https://api.rpubs.com/api/v1/document/1026568/7715ced4685349a6b4dfa866d9dcc24a
+url: http://rpubs.com/enrizky_brillian/1026568
+when: 1681136479.01064
+lastSyncTime: 1681136479.01066

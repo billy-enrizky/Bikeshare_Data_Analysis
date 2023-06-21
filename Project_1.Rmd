@@ -1,0 +1,43 @@
+---
+title: "Project_1"
+author: "Muhammad Enrizky Brillian_1009713712"
+date: '2023-04-04'
+output: html_document
+---
+
+# Merging Datasets from multiple CSVs
+```{r, eval=F}
+# loading libraries
+library(tidyverse)
+library(dplyr)
+#Setting the working Directory
+setwd("~/STAA57_Project")
+# Create empty data frame
+bike_data <- data.frame()
+
+# Loop through all CSV files in folder
+for (file in list.files(pattern=".csv")) {
+  temp_data <- read.csv(file, header=TRUE)  # Read in CSV file
+  bike_data <- rbind(bike_data, temp_data)  # Bind data to existing data frame
+  rm(temp_data)  # Remove original data frame to free up memory
+}
+
+```
+
+# Description of the Dataset
+```{r}
+names(bike_data)
+```
+
+1. Trip ID: A unique identifier for each trip
+2. Trip Duration (Seconds): The length of the trip in seconds
+3. From Station ID: The unique identifier for the starting station of the trip
+4. Trip Start Time: The date and time the trip began
+5. From Station Name: The name of the starting station for the trip
+6. Trip Stop Time: The date and time the trip ended
+7. To Station ID: The unique identifier for the ending station of the trip
+8. Bike ID: The name of the ending station for the trip
+9. User Type: A categorical variable indicating whether the user is a "Annual Member" (annual pass holder of the bikeshare program) or a "Casual Member"(24 or 72 hour pass holders of the bikeshare program)
+
+
+

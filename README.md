@@ -1,6 +1,7 @@
 # Project Title: Toronto Apartment Evaluation
 
 As researchers, our overall research question is to investigate the usage patterns and trends of bikeshare data in Toronto for the year 2018. We aim to analyze various variables, such as trip duration, trip start time, user type, and station information, to gain insights into how the bikeshare system was utilized by different user groups, and to identify any patterns or trends that may emerge from the data. Here is a summary of what the code (Using R) does:
+
 1.	Merging Datasets from multiple CSVs: The code loads all CSV files in a folder and merges them into a single data frame using a loop.
 2.	Description of the Dataset: The code displays the names of the variables in the merged data frame.
 3.	Tables: The code creates the following tables:
